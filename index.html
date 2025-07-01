@@ -49,8 +49,11 @@
     <!-- Footer Section -->
     <footer>
         <div class="container">
-            <p>&copy; 2024 Hckrit. All rights reserved.</p>
+            <p>&copy; <span id="year"></span> Hckrit. All rights reserved.</p>
         </div>
     </footer>
+<script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
